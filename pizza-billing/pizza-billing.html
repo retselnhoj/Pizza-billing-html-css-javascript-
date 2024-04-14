@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Pizza Delivery</title>
+    <link rel="stylesheet" href="pizza-billing.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Pureza's Pizza Deliveries!</h1>
+        <div class="menu">
+            <h2>Menu:</h2>
+            <ul>
+                <li>Small Pizza (S) - $15</li>
+                <li>Medium Pizza (M) - $20</li>
+                <li>Large Pizza (L) - $25</li>
+                <li>Pepperoni - $2</li>
+                <li>Extra Cheese - $1</li>
+            </ul>
+        </div>
+        <form id="pizzaForm">
+            <label for="size">What size pizza do you want? S, M, or L </label>
+            <input type="text" id="size" name="size" required>
+            <label for="pepperoni">Do you want pepperoni? Y or N </label>
+            <input type="text" id="pepperoni" name="pepperoni" required>
+            <label for="cheese">Do you want extra cheese? Y or N </label>
+            <input type="text" id="cheese" name="cheese" required>
+            <button type="submit">Calculate Bill</button>
+        </form>
+        <p id="finalBill" style="display: none;"></p>
+    </div>
+    <script src="pizza-billing.js"></script>
+</body>
+</html>
